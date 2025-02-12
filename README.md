@@ -1,50 +1,56 @@
-# Roemah Jaseb Userbot
+# RoemahJaseb Userbot
 
-Roemah Jaseb Userbot adalah bot Telegram berbasis [Telethon](https://github.com/LonamiWebs/Telethon) yang dikembangkan untuk membantu aktivitas chatting, mengelola grup, dan berbagai fitur otomatis lainnya.
+RoemahJaseb Userbot adalah userbot Telegram yang dikembangkan untuk kebutuhan otomatisasi dan fitur canggih di Telegram.
 
-## ✨ Fitur Utama
+## 🚀 Deploy ke Heroku
 
-- **Jaseb FW (Auto-Forward)**: Meneruskan pesan secara otomatis.  
-- **Anti-Delete Message**: Menyimpan pesan yang dihapus.  
-- **Auto Reply**: Balas otomatis mention/DM.  
-- **Custom Command**: Buat perintah khusus.  
-- **Auto React**: Kirim emoji otomatis.  
-- **Backup Chat**: Ekspor percakapan ke file.  
-- **Salin Pesan/Media dari Channel Privat**.  
-- **Dengarkan Musik Viral TikTok**.  
-- **PM Permintaan**: Pesan otomatis untuk private message.  
-- **Spam**: Kirim pesan berulang.  
-- **Broadcast (BC)**: Kirim pesan massal.  
-- **Add Member**: Tambah anggota ke grup.  
-- **Blokir Username Diam-Diam**.  
-- **Simpan Telethon Client**.  
-- **Auto GW & Delay Spam Support Media & Emoji Premium**.  
-- **Buat Wording**: Membantu membuat teks promosi.  
-- **Auto Translate**.  
-- **Auto Welcome Message**.  
-- **Auto Screenshot**.  
-- **Remind Me (Pengingat Otomatis)**.  
-- **Instagram & YouTube Downloader**.  
-- **Cek Resi Otomatis**.  
-- **Sticker Maker**.  
-- **Fake Typing**.  
-- **Whois Lookup**.  
-- **AI Chat**.  
-- **Auto Delete Message**.  
-- **URL Shortener**.  
-- **Polls/Survey**.  
-- **Auto Reply Chatbot**.  
-- **Auto Backup Data**.  
+Klik tombol di bawah untuk langsung deploy ke Heroku:
 
-## 🚀 Cara Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FRoemahJaseb%2FRepoUserbot)
 
-1. **Fork Repo Ini** di GitHub.  
-2. **Edit & Sesuaikan Konfigurasi** di `.env`.  
-3. **Deploy ke Heroku** atau VPS pilihanmu.  
-4. **Jalankan bot & nikmati fitur-fiturnya!**  
+## 📌 Cara Menggunakan
+1. Klik tombol **Deploy to Heroku** di atas.
+2. Masukkan **API_ID, API_HASH, dan STRING_SESSION** yang diperlukan.
+3. Klik **Deploy** dan tunggu proses selesai.
+4. Setelah sukses, buka **Logs Heroku** untuk memastikan bot berjalan.
+5. Nikmati fitur canggih dari RoemahJaseb Userbot!
 
-## 🎯 Kontribusi & Bantuan
+## 🔧 Konfigurasi
+Edit file `.env` atau `config.env` untuk menyesuaikan pengaturan bot sesuai kebutuhanmu.
 
-Jika ingin berkontribusi atau menemukan bug, silakan buat **Issue** atau **Pull Request** di repo ini.  
+## 📢 Fitur yang Tersedia
+✅ Jaseb FW (Auto-Forward)  
+✅ Anti-Delete Message  
+✅ Auto Reply  
+✅ Custom Command  
+✅ Auto React  
+✅ Backup Chat  
+✅ Salin Pesan/Media dari Channel Privat  
+✅ Dengarkan Musik Viral TikTok  
+✅ PM Permintaan  
+✅ Spam  
+✅ Broadcast (BC)  
+✅ Add Member  
+✅ Blokir Username Diam-Diam  
+✅ Simpan Telethon Client  
+✅ Auto GW & Delay Spam Support Media & Emoji Premium  
+✅ Buat Wording  
+✅ Auto Translate  
+✅ Auto Welcome Message  
+✅ Auto Screenshot  
+✅ Remind Me (Pengingat Otomatis)  
+✅ Instagram & YouTube Downloader  
+✅ Cek Resi Otomatis  
+✅ Sticker Maker  
+✅ Fake Typing  
+✅ Whois Lookup  
+✅ AI Chat  
+✅ Auto Delete Message  
+✅ URL Shortener  
+✅ Polls/Survey  
+✅ Auto Reply Chatbot  
+✅ Auto Backup Data  
 
-📌 **Dikembangkan oleh [@RoemahJaseb](https://t.me/RoemahJaseb)**
+---
+
+💬 **RoemahJaseb Userbot - Userbot by @RoemahJaseb**
