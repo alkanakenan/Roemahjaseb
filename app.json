@@ -1,0 +1,51 @@
+{
+  "name": "RoemahJaseb Userbot",
+  "description": "Userbot Telegram dengan berbagai fitur canggih.",
+  "repository": "https://github.com/RoemahJaseb/RepoUserbot",
+  "logo": "https://raw.githubusercontent.com/RoemahJaseb/RepoUserbot/main/logo.png",
+  "keywords": ["telegram", "userbot", "RoemahJaseb"],
+  "env": {
+    "API_ID": {
+      "description": "Masukkan API ID dari my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Masukkan API Hash dari my.telegram.org",
+      "required": true
+    },
+    "SESSION": {
+      "description": "Masukkan String Session dari Telethon",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Masukkan Token Bot Telegram (Opsional)",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "Masukkan User ID Telegram Owner",
+      "required": true
+    },
+    "OWNER_USERNAME": {
+      "description": "Masukkan Username Owner (Opsional)",
+      "required": false
+    },
+    "REDIS_URI": {
+      "description": "Masukkan URI Redis (Opsional)",
+      "required": false
+    },
+    "REDIS_PASSWORD": {
+      "description": "Masukkan Password Redis (Opsional)",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-redis"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
