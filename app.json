@@ -1,51 +1,59 @@
 {
-  "name": "RoemahJaseb Userbot",
-  "description": "Userbot Telegram dengan berbagai fitur canggih.",
-  "repository": "https://github.com/RoemahJaseb/RepoUserbot",
-  "logo": "https://raw.githubusercontent.com/RoemahJaseb/RepoUserbot/main/logo.png",
-  "keywords": ["telegram", "userbot", "RoemahJaseb"],
-  "env": {
-    "API_ID": {
-      "description": "Masukkan API ID dari my.telegram.org",
-      "required": true
+    "name": "RoemahJaseb Userbot",
+    "description": "RoemahJaseb Userbot dibuat untuk String Telethon dan Pyrogram dengan berbagai fitur canggih.",
+    "logo": "https://graph.org//file/d854abd533a783c6642b1.jpg",  
+    "keywords": [
+        "Telethon",
+        "Pyrogram",
+        "Userbot",
+        "Telegram"
+    ],
+    "repository": "https://github.com/RoemahJaseb/RepoUserbot",
+    "success_url": "https://t.me/RoemahJaseb",
+    "stack": "heroku-22",
+    "env": {
+        "API_ID": {
+            "description": "Dapatkan dari my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Dapatkan dari my.telegram.org",
+            "required": true
+        },
+        "SESSION": {
+            "description": "Masukkan String Session Telethon atau Pyrogram V2",
+            "required": true
+        },
+        "HEROKU_API": {
+            "description": "Isi dengan API Key Heroku.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Masukkan nama aplikasi Heroku.",
+            "required": true
+        }
     },
-    "API_HASH": {
-      "description": "Masukkan API Hash dari my.telegram.org",
-      "required": true
-    },
-    "SESSION": {
-      "description": "Masukkan String Session dari Telethon",
-      "required": true
-    },
-    "BOT_TOKEN": {
-      "description": "Masukkan Token Bot Telegram (Opsional)",
-      "required": false
-    },
-    "OWNER_ID": {
-      "description": "Masukkan User ID Telegram Owner",
-      "required": true
-    },
-    "OWNER_USERNAME": {
-      "description": "Masukkan Username Owner (Opsional)",
-      "required": false
-    },
-    "REDIS_URI": {
-      "description": "Masukkan URI Redis (Opsional)",
-      "required": false
-    },
-    "REDIS_PASSWORD": {
-      "description": "Masukkan Password Redis (Opsional)",
-      "required": false
+    "addons": [
+        {
+            "plan": "rediscloud",
+            "options": {
+                "maxmemory-policy": "allkeys-lru",
+                "maxmemory-redis": "2GB"
+            }
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-redis"
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ]
 }
