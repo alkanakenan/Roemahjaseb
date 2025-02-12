@@ -1,0 +1,10 @@
+📂 plugins
+ ├── __init__.py  (Agar folder dikenali sebagai modul Python)
+ ├── auto_reply.py  (Fitur Auto Reply)
+ ├── anti_delete.py  (Fitur Anti-Delete)
+ ├── jaseb_fw.py  (Fitur Auto-Forward)
+ ├── backup_chat.py  (Fitur Backup Chat)
+ ├── spam.py  (Fitur Spam)
+ ├── add_member.py  (Fitur Tambah Anggota)
+ ├── ai_chat.py  (Fitur AI Chat)
+ ├── dll...
