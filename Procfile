@@ -1,1 +1,1 @@
-worker: python utama.py
+worker: python main.py
