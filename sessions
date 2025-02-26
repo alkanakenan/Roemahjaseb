@@ -1,0 +1,8 @@
+from telethon.sync import TelegramClient
+
+API_ID = 123456  # Ganti dengan API_ID
+API_HASH = "abcdef123456"  # Ganti dengan API_HASH
+
+client = TelegramClient("sessions/my_session", API_ID, API_HASH)
+client.start()
+client.run_until_disconnected()
