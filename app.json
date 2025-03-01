@@ -10,7 +10,7 @@
     ],
     "repository": "https://github.com/RoemahJaseb/RepoUserbot",
     "success_url": "https://t.me/RoemahJaseb",
-    "stack": "heroku-22",
+    "stack": "container",
     "env": {
         "API_ID": {
             "description": "Dapatkan dari my.telegram.org",
