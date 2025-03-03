@@ -1,59 +1,36 @@
 {
-    "name": "RoemahJaseb Userbot",
-    "description": "RoemahJaseb Userbot dibuat untuk String Telethon dan Pyrogram dengan berbagai fitur canggih.",
-    "logo": "https://www.imghippo.com/i/e2526ZFU.jpg",  
-    "keywords": [
-        "Telethon",
-        "Pyrogram",
-        "Userbot",
-        "Telegram"
-    ],
-    "repository": "https://github.com/RoemahJaseb/RepoUserbot",
-    "success_url": "https://t.me/RoemahJaseb",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "Dapatkan dari my.telegram.org",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Dapatkan dari my.telegram.org",
-            "required": true
-        },
-        "SESSION": {
-            "description": "Masukkan String Session Telethon atau Pyrogram V2",
-            "required": true
-        },
-        "HEROKU_API": {
-            "description": "Isi dengan API Key Heroku.",
-            "required": true
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Masukkan nama aplikasi Heroku.",
-            "required": true
-        }
+  "name": "Roemahjaseb",
+  "description": "Userbot Telegram",
+  "repository": "https://github.com/alkanakenan/Roemahjaseb",
+  "logo": "https://telegra.ph/file/7e0a3d2a1b7d3e6a5e1c2.jpg",
+  "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
+  "website": "https://t.me/roemahjaseb",
+  "success_url": "https://t.me/roemahjaseb",
+  "env": {
+    "APP_ID": {
+      "description": "Dapatkan API ID dari my.telegram.org",
+      "required": true
     },
-    "addons": [
-        {
-            "plan": "rediscloud",
-            "options": {
-                "maxmemory-policy": "allkeys-lru",
-                "maxmemory-redis": "2GB"
-            }
-        }
-    ],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "basic"
-        }
+    "API_HASH": {
+      "description": "Dapatkan API Hash dari my.telegram.org",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Dapatkan string session dari perintah generate string session",
+      "required": true
+    },
+    "LOGGER_GROUP": {
+      "description": "ID grup untuk logging",
+      "required": true
+    },
+    "ALIVE_NAME": {
+      "description": "Nama untuk perintah alive",
+      "required": true
     }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
