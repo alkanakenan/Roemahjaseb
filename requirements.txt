@@ -64,7 +64,6 @@ Pyyaml
 qrcode
 rarfile
 randomstuff.py
-redis
 regex
 requests
 scipy
